@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123d32">
+<meta name="description" content="صفحة صدقة جارية ودعاء وذكر وقراءة قرآن">
+<title>صدقة جارية | لا تنسوه من دعائكم</title>
+<style>
+:root{--green:#123d32;--green2:#1c5a49;--gold:#c6a45c;--cream:#f7f5ee;--ink:#26342e;--muted:#718078;--white:#fff;--line:#e8e5da}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"Tahoma","Arial",sans-serif;line-height:1.8}
+.hero{background:radial-gradient(circle at 15% 20%,#2d6a55 0,transparent 30%),linear-gradient(135deg,#0d3028,#1d5947);color:white;padding:46px 18px 58px;text-align:center;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"۞";position:absolute;color:#ffffff12;font-size:150px}.hero:before{top:-50px;right:3%}.hero:after{bottom:-85px;left:5%}
+.wrap{width:min(920px,calc(100% - 28px));margin:auto}.ornament{color:#e5c982;font-size:25px;letter-spacing:8px}
+.kicker{color:#e8d7a8;font-size:13px;letter-spacing:1px;margin:8px 0}
+h1{font-size:clamp(28px,5vw,43px);margin:5px 0 4px;font-weight:700}
+.hero p{margin:8px auto 0;max-width:620px;color:#e6eee9}
+.name{color:#f2d99c}
+main{margin-top:-27px;position:relative;padding-bottom:50px}
+.card{background:white;border:1px solid var(--line);border-radius:20px;padding:22px;margin:17px 0;box-shadow:0 8px 28px #1a3c2a0a}
+.intro{text-align:center;padding:28px 22px}.intro .icon{font-size:32px;color:var(--gold)}
+h2{font-size:21px;color:var(--green);margin:0 0 12px}
+.muted{color:var(--muted);font-size:14px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.tab{border:1px solid var(--line);background:#faf9f5;border-radius:999px;padding:9px 15px;color:var(--green);cursor:pointer;font:inherit;font-size:14px}
+.tab.active{background:var(--green);color:white;border-color:var(--green)}
+.counterbox{background:linear-gradient(150deg,#f7f5ed,#fff);border:1px solid #e8e1cf;border-radius:18px;padding:22px;text-align:center}
+.zikr{font-size:23px;color:var(--green);font-weight:700;margin:6px 0 2px}
+.count{font-size:58px;line-height:1.3;font-weight:700;color:var(--green);font-variant-numeric:tabular-nums}
+.targetline{font-size:13px;color:var(--muted)}
+.progress{height:8px;background:#e9eee9;border-radius:20px;overflow:hidden;margin:13px auto 18px;max-width:390px}
+.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#c5a15a,#e0c47d);transition:width .2s}
+.tap{border:0;border-radius:50%;width:142px;height:142px;background:linear-gradient(145deg,#1e604c,#10392f);color:white;font-size:22px;font-weight:700;cursor:pointer;box-shadow:0 9px 20px #123d3230;transition:transform .08s}
+.tap:active{transform:scale(.96)}
+.actions{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:18px}
+.btn{border:1px solid var(--line);background:white;color:var(--green);border-radius:11px;padding:9px 15px;font:inherit;cursor:pointer}
+.btn.primary{background:var(--green);color:white;border-color:var(--green)}
+select,input{font:inherit;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:white;color:var(--ink)}
+.setting{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;font-size:14px;margin-top:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.dua{background:#fbfaf6;border:1px solid var(--line);border-radius:14px;padding:15px}
+.dua p{margin:5px 0;color:#34443c}
+.quran{font-size:20px;line-height:2.25;text-align:center;color:#243d32}
+.share{text-align:center}.share .btn{margin:5px}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:5px 15px 30px}
+.smallnote{font-size:12px;color:var(--muted);margin-top:12px}
+@media(max-width:560px){.card{padding:17px}.hero{padding-top:35px}.count{font-size:50px}.tap{width:128px;height:128px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="ornament">۞ ✦ ۞</div>
+    <div class="kicker">صَدَقَةٌ جَارِيَةٌ وَدُعَاء</div>
+    <h1>رحم الله <span class="name" id="heroName">عزيزه البسيونى التابعى ابراهيم</span></h1>
+    <p>نسألكم الدعاء لها بالرحمة والمغفرة، وأن يجعل الله ما يُقرأ ويُذكر في ميزان حسناتها.</p>
+  </div>
+</header>
+<main class="wrap">
+  <section class="card intro">
+    <div class="icon">۞</div>
+    <h2>لا تنسوها من صالح دعائكم</h2>
+    <p id="introText">اللهم اغفر لها وارحمها، وعافها واعفُ عنها، وأكرم نُزلها، ووسّع مُدخلها.</p>
+    <p class="muted">هذه الصفحة مساحة للذكر والدعاء وقراءة ما تيسر من القرآن الكريم.</p>
+  </section>
+  <section class="card" id="tasbeeh">
+    <h2>المسبحة الإلكترونية</h2>
+    <p class="muted">اختر الذكر، واضغط على المسبحة لإضافة تسبيحة. يُحفظ تقدمك على هذا الجهاز فقط.</p>
+    <div class="tabs" id="zikrTabs"></div>
+    <div class="counterbox">
+      <div class="zikr" id="currentZikr">سُبْحَانَ اللَّهِ</div>
+      <div class="count" id="count">0</div>
+      <div class="targetline">الهدف: <span id="targetLabel">33</span></div>
+      <div class="progress"><span id="progress"></span></div>
+      <button class="tap" id="tapButton" aria-label="إضافة تسبيحة">سَبِّحْ</button>
+      <div class="setting">
+        <label for="target">العدد المستهدف:</label>
+        <select id="target"><option value="33">33</option><option value="100">100</option><option value="custom">مخصص</option></select>
+        <input id="customTarget" type="number" min="1" max="100000" placeholder="اكتب العدد" hidden style="width:110px">
+      </div>
+      <div class="actions">
+        <button class="btn" id="resetOne">تصفير هذا الذكر</button>
+        <button class="btn" id="resetAll">تصفير جميع العدادات</button>
+      </div>
+      <div class="smallnote">العداد شخصي ولا يجمع تسبيحات الزوار الآخرين.</div>
+    </div>
+  </section>
+  <section class="card">
+    <h2>من الدعاء للمتوفاة</h2>
+    <div class="grid">
+      <div class="dua"><p>اللهم اغفر لها وارحمها، وعافها واعفُ عنها، وأكرم نُزلها، ووسّع مُدخلها.</p></div>
+      <div class="dua"><p>اللهم آنس وحشتها، ونوّر قبرها، واجعل قبرها روضةً من رياض الجنة.</p></div>
+      <div class="dua"><p>اللهم اجزها عن الإحسان إحسانًا، وعن الإساءة عفوًا وغفرانًا.</p></div>
+      <div class="dua"><p>اللهم اجمعنا بها في جنات النعيم، برحمتك يا أرحم الراحمين.</p></div>
+    </div>
+    <p class="smallnote">أدعية عامة؛ لا تُنسب هذه الصياغات إلى حديث نبوي بعينه.</p>
+  </section>
+  <section class="card">
+    <h2>آيات من القرآن الكريم</h2>
+    <p class="quran">﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ﴾</p>
+    <p class="quran">﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ ۝ مَالِكِ يَوْمِ الدِّينِ ۝ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۝ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۝ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ﴾</p>
+    <div class="share"><a class="btn primary" href="https://quran.com/36" target="_blank" rel="noopener">قراءة سورة يس من مصدر قرآني</a></div>
+    <p class="smallnote">رابط خارجي لقراءة سورة يس من Quran.com.</p>
+  </section>
+  <section class="card share">
+    <h2>شارك الصفحة</h2>
+    <p class="muted">ساهم في نشر الدعاء والذكر، وشارك رابط الصفحة مع من تحب.</p>
+    <button class="btn primary" id="shareWhatsApp">مشاركة عبر واتساب</button>
+    <button class="btn" id="copyLink">نسخ رابط الصفحة</button>
+    <div class="smallnote" id="shareStatus" aria-live="polite"></div>
+  </section>
+</main>
+<footer>اللهم اجعل هذا العمل خالصًا لوجهك الكريم، وانفع به من أُهدي إليه.</footer>
+<script>
+const PAGE_CONFIG = {
+  deceasedName: "عزيزه البسيونى التابعى ابراهيم",
+  introText: "اللهم اغفر لها وارحمها، وعافها واعفُ عنها، وأكرم نُزلها، ووسّع مُدخلها."
+};
+document.title = `صدقة جارية | ${PAGE_CONFIG.deceasedName}`;
+document.getElementById("heroName").textContent = PAGE_CONFIG.deceasedName;
+document.getElementById("introText").textContent = PAGE_CONFIG.introText;
+const zikrs = ["سُبْحَانَ اللَّهِ","الْحَمْدُ لِلَّهِ","اللَّهُ أَكْبَرُ","لَا إِلَهَ إِلَّا اللَّهُ","أَسْتَغْفِرُ اللَّهَ"];
+const STORAGE_KEY = "sadaqah-personal-counter-v1";
+let saved = {};
+try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}") || {}; } catch(e) { saved = {}; }
+let active = 0;
+let targetValue = 33;
+const tabs = document.getElementById("zikrTabs");
+const countEl = document.getElementById("count");
+const targetSelect = document.getElementById("target");
+const customInput = document.getElementById("customTarget");
+function persist(){ try { localStorage.setItem(STORAGE_KEY, JSON.stringify(saved)); } catch(e) {} }
+function currentCount(){ return Number(saved[active] || 0); }
+function renderTabs(){
+  tabs.innerHTML = "";
+  zikrs.forEach((z,i)=>{
+    const b=document.createElement("button");
+    b.className="tab"+(i===active?" active":"");
+    b.textContent=z;
+    b.addEventListener("click",()=>{active=i;render();});
+    tabs.appendChild(b);
+  });
+}
+function render(){
+  renderTabs();
+  document.getElementById("currentZikr").textContent=zikrs[active];
+  countEl.textContent=currentCount().toLocaleString("ar-EG");
+  document.getElementById("targetLabel").textContent=targetValue.toLocaleString("ar-EG");
+  document.getElementById("progress").style.width=Math.min(100,currentCount()/targetValue*100)+"%";
+}
+function increment(){ saved[active]=currentCount()+1; persist(); render(); }
+document.getElementById("tapButton").addEventListener("click",increment);
+document.getElementById("resetOne").addEventListener("click",()=>{
+  if(confirm("هل تريد تصفير عداد هذا الذكر؟")){saved[active]=0;persist();render();}
+});
+document.getElementById("resetAll").addEventListener("click",()=>{
+  if(confirm("هل تريد تصفير جميع العدادات المحفوظة على هذا الجهاز؟")){saved={};persist();render();}
+});
+targetSelect.addEventListener("change",()=>{
+  const custom=targetSelect.value==="custom";
+  customInput.hidden=!custom;
+  if(!custom){targetValue=Number(targetSelect.value);render();}
+  else {customInput.focus();}
+});
+customInput.addEventListener("input",()=>{
+  const n=Number(customInput.value);
+  if(Number.isInteger(n)&&n>0&&n<=100000){targetValue=n;render();}
+});
+document.getElementById("shareWhatsApp").addEventListener("click",()=>{
+  const msg=`صدقة جارية عن ${PAGE_CONFIG.deceasedName}، لا تنسوها من دعائكم: ${location.href}`;
+  window.open("https://wa.me/?text="+encodeURIComponent(msg),"_blank","noopener");
+});
+document.getElementById("copyLink").addEventListener("click",async()=>{
+  const status=document.getElementById("shareStatus");
+  try{await navigator.clipboard.writeText(location.href);status.textContent="تم نسخ رابط الصفحة.";}
+  catch(e){status.textContent="انسخ الرابط من شريط عنوان المتصفح.";}
+});
+render();
+</script>
+</body>
+</html>
